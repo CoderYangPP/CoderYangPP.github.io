@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>罗马数字转整形解题思路 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 罗马数字转整形解题思路date: 2025-12-24 23:31:22tags:一、解题思路&ensp;罗马数转整数的解题关键在于建立罗马字符与其所代表的整数之间的关系，实现从字符到数字的快速对应。完成上述步骤后，仅需直接遍历整个字符串，并按照规则相加减即可完成。&ensp;笔者创建了一个romans的新类，保存一串罗马字符与数字之间的对应关系，并实现一个输入字符查找对应数字的方">
+  <meta name="description" content="一、解题思路罗马数转整数的解题关键在于建立罗马字符与其所代表的整数之间的关系，实现从字符到数字的快速对应。完成上述步骤后，仅需直接遍历整个字符串，并按照规则相加减即可完成。 笔者创建了一个romans的新类，保存一串罗马字符与数字之间的对应关系，并实现一个输入字符查找对应数字的方法。这样在主方法中只用关注遍历字符串与字符顺序便可以完成转换任务。 罗马数字转换规则：&ensp;（1）罗马数字包含以下">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2025/12/25/%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E5%BD%A2%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF/index.html">
+<meta property="og:title" content="罗马数字转整形解题思路">
+<meta property="og:url" content="http://example.com/2025/12/24/%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E5%BD%A2%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 罗马数字转整形解题思路date: 2025-12-24 23:31:22tags:一、解题思路&ensp;罗马数转整数的解题关键在于建立罗马字符与其所代表的整数之间的关系，实现从字符到数字的快速对应。完成上述步骤后，仅需直接遍历整个字符串，并按照规则相加减即可完成。&ensp;笔者创建了一个romans的新类，保存一串罗马字符与数字之间的对应关系，并实现一个输入字符查找对应数字的方">
+<meta property="og:description" content="一、解题思路罗马数转整数的解题关键在于建立罗马字符与其所代表的整数之间的关系，实现从字符到数字的快速对应。完成上述步骤后，仅需直接遍历整个字符串，并按照规则相加减即可完成。 笔者创建了一个romans的新类，保存一串罗马字符与数字之间的对应关系，并实现一个输入字符查找对应数字的方法。这样在主方法中只用关注遍历字符串与字符顺序便可以完成转换任务。 罗马数字转换规则：&ensp;（1）罗马数字包含以下">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-12-25T01:41:52.819Z">
-<meta property="article:modified_time" content="2025-12-25T01:41:52.819Z">
+<meta property="article:published_time" content="2025-12-24T15:31:22.000Z">
+<meta property="article:modified_time" content="2025-12-25T01:50:50.642Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -157,42 +157,89 @@
             <article id="post-罗马数字转整形解题思路" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      罗马数字转整形解题思路
+    </h1>
+  
+
+        
+        <a href="/2025/12/24/%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E5%BD%A2%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF/" class="archive-article-date">
+  	<time datetime="2025-12-24T15:31:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-12-24</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="title-罗马数字转整形解题思路date-2025-12-24-23-31-22tags"><a href="#title-罗马数字转整形解题思路date-2025-12-24-23-31-22tags" class="headerlink" title="title: 罗马数字转整形解题思路date: 2025-12-24 23:31:22tags:"></a>title: 罗马数字转整形解题思路<br>date: 2025-12-24 23:31:22<br>tags:</h2><h1 id="一、解题思路"><a href="#一、解题思路" class="headerlink" title="一、解题思路"></a>一、解题思路</h1><p>&ensp;罗马数转整数的解题关键在于建立罗马字符与其所代表的整数之间的关系，实现从字符到数字的快速对应。<br>完成上述步骤后，仅需直接遍历整个字符串，并按照规则相加减即可完成。<br>&ensp;笔者创建了一个romans的新类，保存一串罗马字符与数字之间的对应关系，并实现一个输入字符查找对应数字的方法。这样在主方法中只用关注遍历字符串与字符顺序便可以完成转换任务。<br>&ensp;罗马数字转换规则：<br>&ensp;（1）罗马数字包含以下七种字符: I， V， X， L，C，D 和 M；<br>&ensp;（2）通常情况下，罗马数字中小的数字在大的数字的右边；<br>&ensp;（3）但也存在特例：<br>&ensp;I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9;<br>&ensp;X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90;<br>&ensp;C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900.<br>Eg:罗马数字 2 写做 II ，即为两个并列的 1 。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II<br>&ensp;!!!!注意事项!!!!<br>&ensp;输入的罗马字符与普通的字符串不同！是从左往右读的！！最左边的字符下标为0，依次往后增加！！</p>
-<h1 id="二、代码实现"><a href="#二、代码实现" class="headerlink" title="二、代码实现"></a>二、代码实现</h1><p>&#x2F;*</p>
-<ul>
-<li>@lc app&#x3D;leetcode.cn id&#x3D;13 lang&#x3D;cpp</li>
-<li></li>
-<li>[13] 罗马数字转整数<br> *&#x2F;</li>
-</ul>
-<p>&#x2F;&#x2F; @lc code&#x3D;start<br>#include<string><br>#include<iostream><br>using namespace std;</p>
-<p>struct roman<br>{<br>    char s;<br>    int val;<br>};</p>
-<p>class romans<br>{<br>private:<br>    roman R[7]&#x3D; {<br>        {‘I’, 1},<br>        {‘V’, 5},<br>        {‘X’, 10},<br>        {‘L’, 50},<br>        {‘C’, 100},<br>        {‘D’, 500},<br>        {‘M’, 1000}<br>    };</p>
-<p>public:<br>    romans(){};<br>    ~romans(){};<br>    int getval(char s);</p>
-<p>};</p>
-<p>int romans::getval(char s)<br>{<br>    for(int i &#x3D; 0 ; i &lt; 7; i++)<br>    {<br>        if(R[i].s &#x3D;&#x3D; s)<br>        {<br>            return R[i].val;<br>        }<br>    }<br>    return 1000;<br>}</p>
-<p>class Solution {<br>public:<br>    int romanToInt(string s) {<br>        romans R;<br>        int sum &#x3D; R.getval(s[0]);<br>        for(int i &#x3D; 1; i &lt; s.length(); i++)<br>        {</p>
-<pre><code>        if( (s[i-1] == &#39;I&#39; &amp;&amp; (s[i] == &#39;V&#39; || s[i] == &#39;X&#39;)) ||
-            (s[i-1] == &#39;X&#39; &amp;&amp; (s[i] == &#39;L&#39; || s[i] == &#39;C&#39;)) ||
-            (s[i-1] == &#39;C&#39; &amp;&amp; (s[i] == &#39;D&#39; || s[i] == &#39;M&#39;))
-        )
-        &#123;
-            sum = sum + R.getval(s[i]) - 2*R.getval(s[i-1]);
-        &#125;
-        else&#123;
-            sum = sum + R.getval(s[i]);
-        &#125;
+        <h1 id="一、解题思路"><a href="#一、解题思路" class="headerlink" title="一、解题思路"></a>一、解题思路</h1><p>罗马数转整数的解题关键在于建立罗马字符与其所代表的整数之间的关系，实现从字符到数字的快速对应。<br>完成上述步骤后，仅需直接遍历整个字符串，并按照规则相加减即可完成。</p>
+<p>笔者创建了一个romans的新类，保存一串罗马字符与数字之间的对应关系，并实现一个输入字符查找对应数字的方法。这样在主方法中只用关注遍历字符串与字符顺序便可以完成转换任务。</p>
+<p>罗马数字转换规则：<br>&ensp;（1）罗马数字包含以下七种字符: I， V， X， L，C，D 和 M；<br>&ensp;（2）通常情况下，罗马数字中小的数字在大的数字的右边；<br>&ensp;（3）但也存在特例：<br>&ensp;I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9;<br>&ensp;X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90;<br>&ensp;C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900.<br>Eg:罗马数字 2 写做 II ，即为两个并列的 1 。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II</p>
+<p>!!!!注意事项!!!!<br>输入的罗马字符与普通的字符串不同！是从左往右读的！！最左边的字符下标为0，依次往后增加！！</p>
+<h1 id="二、代码实现"><a href="#二、代码实现" class="headerlink" title="二、代码实现"></a>二、代码实现</h1><pre><code class="cpp">/*
+ * @lc app=leetcode.cn id=13 lang=cpp
+ *
+ * [13] 罗马数字转整数
+ */
 
+// @lc code=start
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+using namespace std;
+
+struct roman &#123;
+    char s;
+    int val;
+&#125;;
+
+class romans &#123;
+private:
+    roman R[7] = &#123;
+        &#123;&#39;I&#39;, 1&#125;,
+        &#123;&#39;V&#39;, 5&#125;,
+        &#123;&#39;X&#39;, 10&#125;,
+        &#123;&#39;L&#39;, 50&#125;,
+        &#123;&#39;C&#39;, 100&#125;,
+        &#123;&#39;D&#39;, 500&#125;,
+        &#123;&#39;M&#39;, 1000&#125;
+    &#125;;
+
+public:
+    romans() &#123;&#125;;
+    ~romans() &#123;&#125;;
+    int getval(char s);
+&#125;;
+
+int romans::getval(char s) &#123;
+    for (int i = 0; i &lt; 7; i++) &#123;
+        if (R[i].s == s) &#123;
+            return R[i].val;
+        &#125;
     &#125;
-    return sum;
+    return 0;
 &#125;
+
+class Solution &#123;
+public:
+    int romanToInt(string s) &#123;
+        romans R;
+        int sum = R.getval(s[0]);
+        for (int i = 1; i &lt; s.length(); i++) &#123;
+            if ((s[i-1] == &#39;I&#39; &amp;&amp; (s[i] == &#39;V&#39; || s[i] == &#39;X&#39;)) ||
+                (s[i-1] == &#39;X&#39; &amp;&amp; (s[i] == &#39;L&#39; || s[i] == &#39;C&#39;)) ||
+                (s[i-1] == &#39;C&#39; &amp;&amp; (s[i] == &#39;D&#39; || s[i] == &#39;M&#39;))) &#123;
+                sum = sum + R.getval(s[i]) - 2 * R.getval(s[i-1]);
+            &#125; else &#123;
+                sum += R.getval(s[i]);
+            &#125;
+        &#125;
+        return sum;
+    &#125;
+&#125;;
+// @lc code=end
 </code></pre>
-<p>};<br>&#x2F;&#x2F; @lc code&#x3D;end</p>
-<ul>
-<li></li>
-</ul>
 
       
 
@@ -272,7 +319,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2025/12/25/%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E5%BD%A2%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2025/12/24/%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E5%BD%A2%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF/" alt="微信分享二维码">
     </div>
 </div>
 
